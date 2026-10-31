@@ -8,13 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-06 18:30+0000\n"
+"POT-Creation-Date: 2026-10-31 19:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
@@ -1345,7 +1345,7 @@ msgstr ""
 #: ../db/drivers/postgres/index.c:60 ../raster/r.random/random.c:248
 #: ../raster/r.to.vect/main.c:245 ../vector/v.decimate/copy_tab.c:116
 #: ../vector/v.extract/copy_tab.c:121 ../vector/v.mkgrid/main.c:368
-#: ../vector/v.mkgrid/main.c:429 ../vector/v.overlay/main.c:621
+#: ../vector/v.mkgrid/main.c:429 ../vector/v.overlay/main.c:629
 #: ../vector/v.patch/main.c:391 ../vector/v.random/main.c:302
 #: ../vector/v.select/copy_tabs.c:85
 msgid "Unable to create index"
@@ -2272,7 +2272,7 @@ msgstr ""
 #: ../vector/v.out.dxf/main.c:78 ../vector/v.out.lidar/main.c:606
 #: ../vector/v.out.ogr/main.c:141 ../vector/v.out.postgis/main.c:100
 #: ../vector/v.out.pov/main.c:101 ../vector/v.out.svg/main.c:139
-#: ../vector/v.overlay/main.c:196 ../vector/v.parallel/main.c:146
+#: ../vector/v.overlay/main.c:203 ../vector/v.parallel/main.c:146
 #: ../vector/v.patch/main.c:133 ../vector/v.patch/main.c:152
 #: ../vector/v.patch/main.c:188 ../vector/v.patch/main.c:339
 #: ../vector/v.patch/main.c:417 ../vector/v.perturb/main.c:160
@@ -2335,7 +2335,7 @@ msgstr ""
 #: ../vector/v.net.steiner/main.c:622 ../vector/v.net.timetable/main.c:352
 #: ../vector/v.net.visibility/main.c:74 ../vector/v.outlier/main.c:232
 #: ../vector/v.outlier/main.c:237 ../vector/v.outlier/main.c:243
-#: ../vector/v.overlay/main.c:230 ../vector/v.parallel/main.c:151
+#: ../vector/v.overlay/main.c:238 ../vector/v.parallel/main.c:151
 #: ../vector/v.patch/main.c:348 ../vector/v.patch/main.c:353
 #: ../vector/v.perturb/main.c:170 ../vector/v.profile/main.c:595
 #: ../vector/v.proj/main.c:481 ../vector/v.qcount/main.c:127
@@ -4100,7 +4100,6 @@ msgstr ""
 msgid "Get text color from cell color value"
 msgstr ""
 
-#. GTC Count of window rows
 #. GTC Count of raster rows
 #. GTC Count of window rows
 #: ../display/d.rast.num/main.c:211 ../raster/r.thin/io.c:110
@@ -4519,7 +4518,7 @@ msgstr ""
 #: ../vector/v.colors/scan_attr.c:24 ../vector/v.colors/write_rgb.c:20
 #: ../vector/v.distance/main.c:590 ../vector/v.edit/select.c:499
 #: ../vector/v.extrude/main.c:223 ../vector/v.generalize/misc.c:168
-#: ../vector/v.neighbors/main.c:219 ../vector/v.overlay/main.c:422
+#: ../vector/v.neighbors/main.c:219 ../vector/v.overlay/main.c:430
 #: ../vector/v.surf.bspline/crosscorr.c:123 ../vector/v.to.rast/support.c:101
 #: ../vector/v.to.rast/support.c:271 ../vector/v.to.rast/support.c:499
 #: ../vector/v.univar/main.c:271 ../vector/v.vect.stats/main.c:384
@@ -4560,8 +4559,8 @@ msgstr ""
 #: ../vector/v.net.path/path.c:95 ../vector/v.net.timetable/main.c:89
 #: ../vector/v.normal/main.c:120 ../vector/v.out.ogr/main.c:713
 #: ../vector/v.out.postgis/table.c:34 ../vector/v.out.svg/main.c:159
-#: ../vector/v.out.vtk/writeVTK.c:645 ../vector/v.overlay/main.c:255
-#: ../vector/v.overlay/main.c:439 ../vector/v.patch/main.c:161
+#: ../vector/v.out.vtk/writeVTK.c:645 ../vector/v.overlay/main.c:263
+#: ../vector/v.overlay/main.c:447 ../vector/v.patch/main.c:161
 #: ../vector/v.patch/main.c:199 ../vector/v.patch/main.c:372
 #: ../vector/v.patch/main.c:454 ../vector/v.profile/main.c:475
 #: ../vector/v.profile/main.c:640 ../vector/v.random/main.c:243
@@ -9400,17 +9399,14 @@ msgid "Preliminary scene analysis:"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:126
-#, c-format
 msgid "* Desert index: %.2lf"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:127
-#, c-format
 msgid "* Snow cover: %.2lf %%"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:128
-#, c-format
 msgid "* Cloud cover: %.2lf %%"
 msgstr ""
 
@@ -9419,17 +9415,14 @@ msgid "* Temperature of clouds:"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:130
-#, c-format
 msgid "** Maximum: %.2lf K"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:131
-#, c-format
 msgid "** Mean (%s cloud): %.2lf K"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:133
-#, c-format
 msgid "** Minimum: %.2lf K"
 msgstr ""
 
@@ -9438,17 +9431,14 @@ msgid "Histogram cloud signature:"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:150
-#, c-format
 msgid "* Mean temperature: %.2lf K"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:151
-#, c-format
 msgid "* Standard deviation: %.2lf"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:152
-#, c-format
 msgid "* Skewness: %.2lf"
 msgstr ""
 
@@ -9458,17 +9448,14 @@ msgid "* Histogram classes: %d"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:165
-#, c-format
 msgid "* 98.75 percentile: %.2lf K"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:166
-#, c-format
 msgid "* 97.50 percentile: %.2lf K"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:167
-#, c-format
 msgid "* 83.50 percentile: %.2lf K"
 msgstr ""
 
@@ -9477,12 +9464,10 @@ msgid "Maximum temperature:"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:189
-#, c-format
 msgid "* Cold cloud: %.2lf K"
 msgstr ""
 
 #: ../imagery/i.landsat.acca/algorithm.c:190
-#, c-format
 msgid "* Warm cloud: %.2lf K"
 msgstr ""
 
@@ -19186,7 +19171,7 @@ msgstr ""
 #: ../vector/v.net.components/main.c:189 ../vector/v.net.distance/main.c:293
 #: ../vector/v.net.flow/main.c:179 ../vector/v.net.iso/main.c:387
 #: ../vector/v.net.path/path.c:110 ../vector/v.net.timetable/main.c:99
-#: ../vector/v.overlay/main.c:616 ../vector/v.to.points/main.c:214
+#: ../vector/v.overlay/main.c:624 ../vector/v.to.points/main.c:214
 #, c-format
 msgid "Unable to create table: '%s'"
 msgstr ""
@@ -19206,7 +19191,7 @@ msgstr ""
 #: ../vector/v.in.ascii/main.c:435 ../vector/v.in.dxf/write_vect.c:242
 #: ../vector/v.in.lidar/attributes.c:144 ../vector/v.in.ogr/main.c:1180
 #: ../vector/v.mkgrid/main.c:372 ../vector/v.mkgrid/main.c:433
-#: ../vector/v.overlay/main.c:625 ../vector/v.patch/main.c:395
+#: ../vector/v.overlay/main.c:633 ../vector/v.patch/main.c:395
 #: ../vector/v.random/main.c:307 ../vector/v.reclass/main.c:327
 #: ../vector/v.sample/main.c:196 ../vector/v.select/copy_tabs.c:88
 #: ../vector/v.to.points/main.c:224
@@ -19221,7 +19206,7 @@ msgid "Writing attributes..."
 msgstr ""
 
 #: ../raster/r.contour/main.c:215 ../raster3d/r3.flow/flowline.c:61
-#: ../vector/v.overlay/area_area.c:439 ../vector/v.overlay/line_area.c:452
+#: ../vector/v.overlay/area_area.c:448 ../vector/v.overlay/line_area.c:452
 #: ../vector/v.to.points/write.c:59
 #, c-format
 msgid "Unable to insert new record: '%s'"
@@ -19753,7 +19738,6 @@ msgid "Writing output raster map..."
 msgstr ""
 
 #: ../raster/r.drain/main.c:721
-#, c-format
 msgid "direction read: %lf, neighbour found: %i"
 msgstr ""
 
@@ -24983,7 +24967,7 @@ msgid "Processing start points..."
 msgstr ""
 
 #: ../raster/r.path/main.c:538 ../vector/v.buffer/main.c:410
-#: ../vector/v.in.ogr/main.c:881 ../vector/v.overlay/main.c:237
+#: ../vector/v.in.ogr/main.c:881 ../vector/v.overlay/main.c:245
 #: ../vector/v.voronoi/main.c:215
 msgid "Unable to create temporary vector map"
 msgstr ""
@@ -25549,17 +25533,14 @@ msgid "Output raster map required"
 msgstr ""
 
 #: ../raster/r.random.surface/init.c:140
-#, c-format
 msgid "Distance value (%d): %lf must be >= 0.0"
 msgstr ""
 
 #: ../raster/r.random.surface/init.c:168
-#, c-format
 msgid "Exponent value (%lf) must be > 0.0"
 msgstr ""
 
 #: ../raster/r.random.surface/init.c:193
-#, c-format
 msgid "Flat value (%lf) must be less than distance value (%lf)"
 msgstr ""
 
@@ -26239,13 +26220,11 @@ msgstr ""
 
 #: ../raster/r.resamp.bspline/crosscorr.c:315
 #: ../vector/v.surf.bspline/crosscorr.c:301
-#, c-format
 msgid "Mean = %.5lf"
 msgstr ""
 
 #: ../raster/r.resamp.bspline/crosscorr.c:316
 #: ../vector/v.surf.bspline/crosscorr.c:302
-#, c-format
 msgid "Root Mean Square (RMS) = %.5lf"
 msgstr ""
 
@@ -26256,7 +26235,6 @@ msgstr ""
 
 #: ../raster/r.resamp.bspline/crosscorr.c:335
 #: ../vector/v.surf.bspline/crosscorr.c:321
-#, c-format
 msgid "The minimum value for the test (rms=%lf) was obtained with: lambda_i = %.3f"
 msgstr ""
 
@@ -28939,7 +28917,6 @@ msgid "Mode 2: integrated daily irradiation for a given day of the year"
 msgstr ""
 
 #: ../raster/r.sun/main.c:697
-#, c-format
 msgid "Using Linke constant: %lf"
 msgstr ""
 
@@ -28949,7 +28926,6 @@ msgid "Using Linke map <%s>"
 msgstr ""
 
 #: ../raster/r.sun/main.c:705
-#, c-format
 msgid "Using albedo constant: %lf"
 msgstr ""
 
@@ -28959,7 +28935,6 @@ msgid "Using albedo map <%s>"
 msgstr ""
 
 #: ../raster/r.sun/main.c:713
-#, c-format
 msgid "Using slope constant: %lf"
 msgstr ""
 
@@ -28969,7 +28944,6 @@ msgid "Using slope map <%s>"
 msgstr ""
 
 #: ../raster/r.sun/main.c:722
-#, c-format
 msgid "Using aspect constant: %lf"
 msgstr ""
 
@@ -29585,7 +29559,6 @@ msgid "Autogenerated random seed set to: %ld"
 msgstr ""
 
 #: ../raster/r.surf.fractal/main.c:93
-#, c-format
 msgid "Fractal dimension of %.2lf must be between 2 and 3."
 msgstr ""
 
@@ -29896,7 +29869,6 @@ msgstr ""
 msgid "Input raster must be of type CELL."
 msgstr ""
 
-#. GTC Count of window columns
 #. GTC Count of raster columns
 #. GTC Count of window columns
 #: ../raster/r.thin/io.c:112 ../raster/r.thin/io.c:188
@@ -30212,7 +30184,7 @@ msgstr ""
 #: ../vector/v.in.ogr/main.c:321 ../vector/v.in.ogr/main.c:330
 #: ../vector/v.in.ogr/main.c:339 ../vector/v.in.ogr/main.c:375
 #: ../vector/v.in.ogr/main.c:406 ../vector/v.overlay/main.c:136
-#: ../vector/v.overlay/main.c:146 ../vector/v.to.rast/main.c:88
+#: ../vector/v.overlay/main.c:153 ../vector/v.to.rast/main.c:88
 #: ../vector/v.to.rast/main.c:94 ../vector/v.to.rast/main.c:99
 msgid "Attributes"
 msgstr ""
@@ -33199,7 +33171,7 @@ msgstr ""
 msgid "Cannot continue (problem deleting table)."
 msgstr ""
 
-#: ../scripts/db.in.ogr/db.in.ogr.py:111 ../vector/v.overlay/main.c:263
+#: ../scripts/db.in.ogr/db.in.ogr.py:111 ../vector/v.overlay/main.c:271
 #, c-format, python-format
 msgid "Table <%s> already exists and will be overwritten"
 msgstr ""
@@ -33643,6 +33615,7 @@ msgid "Unknown extension (addon) source type '{0}'. Please report this to the gr
 msgstr ""
 
 #: ../scripts/g.extension/g.extension.py:1976
+#: ../scripts/g.extension/testsuite/test_addons_download.py:188
 msgid "Path to the source code:"
 msgstr ""
 
@@ -36120,7 +36093,7 @@ msgstr ""
 msgid "Removing bridges..."
 msgstr ""
 
-#: ../vector/v.buffer/main.c:825 ../vector/v.overlay/area_area.c:183
+#: ../vector/v.buffer/main.c:825 ../vector/v.overlay/area_area.c:192
 msgid "Attaching islands..."
 msgstr ""
 
@@ -36128,7 +36101,7 @@ msgstr ""
 msgid "Calculating centroids for all areas..."
 msgstr ""
 
-#: ../vector/v.buffer/main.c:846 ../vector/v.overlay/area_area.c:196
+#: ../vector/v.buffer/main.c:846 ../vector/v.overlay/area_area.c:205
 msgid "Cannot calculate area centroid"
 msgstr ""
 
@@ -39790,7 +39763,7 @@ msgstr ""
 msgid "Number of OSM line splits: %d"
 msgstr ""
 
-#: ../vector/v.in.ogr/clean.c:123 ../vector/v.overlay/area_area.c:179
+#: ../vector/v.in.ogr/clean.c:123 ../vector/v.overlay/area_area.c:188
 msgid "Merging lines..."
 msgstr ""
 
@@ -40114,7 +40087,7 @@ msgstr ""
 msgid "The order of features in input layer <%s> has changed"
 msgstr ""
 
-#: ../vector/v.in.ogr/main.c:1630 ../vector/v.overlay/area_area.c:307
+#: ../vector/v.in.ogr/main.c:1630 ../vector/v.overlay/area_area.c:316
 msgid "Writing centroids..."
 msgstr ""
 
@@ -40866,7 +40839,7 @@ msgid "Cannot allocate more memory"
 msgstr ""
 
 #: ../vector/v.label.sa/labels.c:161 ../vector/v.label/main.c:317
-#: ../vector/v.overlay/main.c:449
+#: ../vector/v.overlay/main.c:457
 msgid "Unable to select attributes"
 msgstr ""
 
@@ -41571,7 +41544,7 @@ msgstr ""
 #: ../vector/v.out.ogr/export_lines_fast.c:170
 #: ../vector/v.out.ogr/export_lines_fast.c:301
 #: ../vector/v.out.ogr/export_lines_fast.c:398 ../vector/v.out.svg/main.c:403
-#: ../vector/v.out.vtk/writeVTK.c:586 ../vector/v.overlay/main.c:515
+#: ../vector/v.out.vtk/writeVTK.c:586 ../vector/v.overlay/main.c:523
 msgid "Unable to fetch data from table"
 msgstr ""
 
@@ -44230,18 +44203,23 @@ msgid_plural "%d boundaries snapped"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../vector/v.overlay/area_area.c:230
+#: ../vector/v.overlay/area_area.c:177
+#, c-format
+msgid "Removing areas smaller than %g sqm..."
+msgstr ""
+
+#: ../vector/v.overlay/area_area.c:239
 #, c-format
 msgid "Querying vector map <%s>..."
 msgstr ""
 
-#: ../vector/v.overlay/area_area.c:294 ../vector/v.overlay/area_area.c:380
-#: ../vector/v.overlay/area_area.c:410 ../vector/v.overlay/line_area.c:391
+#: ../vector/v.overlay/area_area.c:303 ../vector/v.overlay/area_area.c:389
+#: ../vector/v.overlay/area_area.c:419 ../vector/v.overlay/line_area.c:391
 #: ../vector/v.overlay/line_area.c:421
 msgid "Attribute not found"
 msgstr ""
 
-#: ../vector/v.overlay/area_area.c:471
+#: ../vector/v.overlay/area_area.c:480
 msgid "Copying results to final output map..."
 msgstr ""
 
@@ -44338,51 +44316,59 @@ msgstr ""
 msgid "Disable snapping with snap <= 0"
 msgstr ""
 
-#: ../vector/v.overlay/main.c:185 ../vector/v.select/main.c:96
+#: ../vector/v.overlay/main.c:147
+msgid "Minimum size of areas to keep in square meters"
+msgstr ""
+
+#: ../vector/v.overlay/main.c:148
+msgid "Enable with minsize > 0"
+msgstr ""
+
+#: ../vector/v.overlay/main.c:192 ../vector/v.select/main.c:96
 #, c-format
 msgid "Unknown operator '%s'"
 msgstr ""
 
-#: ../vector/v.overlay/main.c:204
+#: ../vector/v.overlay/main.c:211
 #, c-format
 msgid "Unable to determine feature type for <%s>"
 msgstr ""
 
-#: ../vector/v.overlay/main.c:210
+#: ../vector/v.overlay/main.c:217
 #, c-format
 msgid "Invalid feature type (%d) for <%s>. Only '%s' or '%s' supported."
 msgstr ""
 
-#: ../vector/v.overlay/main.c:219
+#: ../vector/v.overlay/main.c:226
 #, c-format
 msgid "Operator '%s' is not supported for type line"
 msgstr ""
 
-#: ../vector/v.overlay/main.c:269
+#: ../vector/v.overlay/main.c:277
 #, c-format
 msgid "Table <%s> already exists, use '%s'"
 msgstr ""
 
-#: ../vector/v.overlay/main.c:287
+#: ../vector/v.overlay/main.c:295
 #, c-format
 msgid "Copying vector features from <%s>..."
 msgstr ""
 
-#: ../vector/v.overlay/main.c:368
+#: ../vector/v.overlay/main.c:376
 #, c-format
 msgid "No %s features found in vector map <%s>. Verify '%s' parameter."
 msgstr ""
 
-#: ../vector/v.overlay/main.c:418
+#: ../vector/v.overlay/main.c:426
 msgid "Collecting input attributes..."
 msgstr ""
 
-#: ../vector/v.overlay/main.c:501
+#: ../vector/v.overlay/main.c:509
 #, c-format
 msgid "Unknown column type '%s' of column '%s'"
 msgstr ""
 
-#: ../vector/v.overlay/main.c:566
+#: ../vector/v.overlay/main.c:574
 #, c-format
 msgid "Unknown column type '%s' of column '%s', values lost"
 msgstr ""
@@ -47097,7 +47083,6 @@ msgid "Cannot allocate memory for point"
 msgstr ""
 
 #: ../vector/v.vol.rst/user1.c:220
-#, c-format
 msgid "Can't insert %lf,%lf,%lf,%lf,%lf a=%d"
 msgstr ""
 
@@ -47279,10 +47264,6 @@ msgstr ""
 #: ../vector/v.voronoi/skeleton.c:296 ../vector/v.voronoi/skeleton.c:406
 #, c-format
 msgid "Pass %d"
-msgstr ""
-
-#: ../vector/v.voronoi/skeleton.c:517
-msgid "Node is outside any input area"
 msgstr ""
 
 #: ../vector/v.voronoi/sw_main.c:194
